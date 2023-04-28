@@ -1,0 +1,12 @@
+Pages you need (pages live in pages folder)
+- 404 ✅
+- index (Components in the homepage/index will be BlogCard, NavBar)
+- login (deal with this last when database/backend is done)
+- create-blog (Components in this page are NavBar)
+
+Components you need (components live in components folder)
+- BlogCard
+- NavBar
+
+Other things
+- How to navigate pages using Gatsby (using Link component from Gatsby)

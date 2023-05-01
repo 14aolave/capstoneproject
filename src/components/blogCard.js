@@ -2,12 +2,13 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 import axios from "axios"
 import '../../src/style.css';
+
 const BlogCard = () => {
 const [blogData, setBlogData] = React.useState([]);
 
   async function getBlogPosts() {
     try {
-      const response = await axios.get("http://localhost:3030/blogs");
+      const response = await axios.get("http://localhost:8000/blogs");
       console.log("response", response.data);
       return setBlogData(response.data)
     } catch (error) {

@@ -4,10 +4,10 @@ const express = require('express');
 
 const app = express();
 const url = `mongodb://localhost:27020/local`;
-const port = 3030;
+const port = 8000; 
 
 const corsOptions = {
-    origin: 'http://localhost:8000',
+    origin: 'http://localhost:3030',
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
   };
 app.use(cors(corsOptions));
@@ -36,6 +36,7 @@ app.get('/blogs', function(req, res) {
       ]
       res.send(mockBlogData);
   });
+
 
 // app.post('/blogs', function(req, res) {
 //     // Pulling data from the request body
